@@ -1,5 +1,7 @@
 package VTChat.VdoTok.VTChat.VdoTok;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -78,12 +80,12 @@ public class AndroidCombineTest extends androidCababilities  {
 		//driver.hideKeyboard();
 		//driver.navigate().back();
 		vt_getElement.ClickSignUp.click();
-		String expectedtitle = "ALEEMTEST";
+		String expectedtitle = "ALEEM101";
 		String resulttapTitle = vt_getElement.homeTitle.getText();
-		AssertJUnit.assertEquals(resulttapTitle, expectedtitle, "ALEEMTEST");
+		AssertJUnit.assertEquals(resulttapTitle, expectedtitle, "ALEEM101");
 
 		logger.info("Screen Title is" + expectedtitle);
-
+/*******************
 
 		if( vt_getElement.homeTitle.isDisplayed() )
 			{
@@ -126,7 +128,7 @@ public class AndroidCombineTest extends androidCababilities  {
 		Thread.sleep(10000);
 		driver.executeScript("mobile: stopScreenStreaming");
 
-
+**********************/
 		/*
 		
 		
